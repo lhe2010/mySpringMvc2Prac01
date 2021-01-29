@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 import com.spring.boardPrac01.dto.BoardDTO;
 
-@Service
 public interface BoardService {
 	public List<BoardDTO> listAll() throws Exception;
 }

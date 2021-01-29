@@ -4,9 +4,12 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.stereotype.Service;
+
 import com.spring.boardPrac01.dao.BoardDAO;
 import com.spring.boardPrac01.dto.BoardDTO;
 
+@Service
 public class BoardServiceImpl implements BoardService {
 
 	@Inject
@@ -14,7 +17,7 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public List<BoardDTO> listAll() throws Exception {
-		return null;
+		return dao.getAllBoard();
 	}
 
 }
