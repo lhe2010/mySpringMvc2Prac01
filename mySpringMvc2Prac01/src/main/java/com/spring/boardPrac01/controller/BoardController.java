@@ -17,12 +17,7 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 
-	@RequestMapping(value="/")
-	public String firstpage() {
-		return "home";
-	}
-
-	@RequestMapping(value="/main", method=RequestMethod.GET)
+	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String main() {
 		return "boardPrac01/main";
 	}
